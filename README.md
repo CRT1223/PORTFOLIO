@@ -22,6 +22,9 @@ A modern, responsive portfolio website showcasing my work, skills, and services 
 - AOS (Animate On Scroll) Library
 - Bootstrap Icons
 
+## Live Demo
+
+Visit the live website: [Your GitHub Pages URL]
 
 ## Setup
 
