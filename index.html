@@ -45,8 +45,8 @@
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
     >
       <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-          >Portfolio</a
+        <a class="navbar-brand fw-bold fs-2" href="#home" style="color: #3f396d"
+          ><i class="bi bi-code-slash me-2"></i>Peter Nelmida</a
         >
         <button
           class="nav-menu d-md-none"
@@ -62,7 +62,7 @@
         >
           <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#service">Service</a>
@@ -90,17 +90,24 @@
       <div class="row justify-content-evenly align-middle">
         <!-- here data-aos is used for adding aos animation  -->
         <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Peter Luigi Nelmida</span>
-          </h2>
-          <p class="text-muted">
-            I am currently studying at the University of Cebu 
-            as a third-year student pursuing a Bachelor of Science in Information Technology.
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">
+            <span class="c-orange">Peter Luigi Nelmida</span>
+          </h1>
+          <h2 class="hero-subtitle">Web Developer & Designer</h2>
+          <p class="hero-description">
+            A passionate fourth-year BSIT student at the University of Cebu, specializing in creating 
+            beautiful, functional, and user-friendly web experiences. I transform ideas into digital reality 
+            through clean code and creative design.
           </p>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
-          </button>
-          <a href="" class="link ms-4 d-none">See My Work</a>
+          <div class="hero-buttons mt-4">
+            <button class="c-btn h-btn py-3 px-5 rounded-pill">
+              <i class="bi bi-briefcase me-2"></i>Hire Me
+            </button>
+            <a href="#portfolio" class="btn-outline ms-3 py-3 px-5 rounded-pill">
+              <i class="bi bi-folder2-open me-2"></i>View Portfolio
+            </a>
+          </div>
         </div>
         <div class="col-10 col-md-4 d-none d-md-block">
           <img src="images/banner-01.webp" class="img-fluid" alt="" />
@@ -134,7 +141,7 @@
                 Motivated web design student with a strong foundation in creating responsive and user-friendly websites. Proficient in HTML, CSS, and basic JavaScript, with hands-on experience using tools like Figma and Adobe XD. 
                 Eager to apply design skills to real-world projects and continuously improve through learning and collaboration
               </p>
-              <a href="" class="link">Read More</a>
+              <a href="#portfolio" class="link">Read More</a>
             </div>
           </div>
         </div>
@@ -153,7 +160,7 @@
                 I’m a dedicated web development student with experience in building websites using HTML, CSS, and JavaScript. I enjoy creating websites that look great and work smoothly on any device. I’m also learning back-end development and can’t wait to apply what I’ve learned to real projects. 
                 I’m always excited to pick up new skills and grow through practice and teamwork.
               </p>
-              <a href="" class="link">Read More</a>
+              <a href="#portfolio" class="link">Read More</a>
             </div>
           </div>
         </div>
@@ -172,7 +179,7 @@
                 I’m a detail-oriented student who enjoys debugging and fixing code issues. With experience in HTML, CSS, and JavaScript, I love solving problems and making websites work better.
                  I’m eager to learn more and improve my skills through real projects.
               </p>
-              <a href="" class="link">Read More</a>
+              <a href="#portfolio" class="link">Read More</a>
             </div>
           </div>
         </div>
@@ -579,8 +586,8 @@
                     rows="5"
                   ></textarea>
                 </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
+                <button type="button" class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  <i class="bi bi-send me-2"></i>Submit
                 </button>
               </div>
               
@@ -651,8 +658,8 @@
                     rows="5"
                   ></textarea>
                 </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
+                <button type="button" class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  <i class="bi bi-send me-2"></i>Submit
                 </button>
               </div>
               
@@ -723,8 +730,8 @@
                     rows="5"
                   ></textarea>
                 </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
+                <button type="button" class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  <i class="bi bi-send me-2"></i>Submit
                 </button>
               </div>
               
@@ -802,8 +809,8 @@
                 rows="5"
               ></textarea>
             </div>
-            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-              Submit
+            <button type="button" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <i class="bi bi-send me-2"></i>Submit
             </button>
           </div>
         </div>
@@ -861,6 +868,29 @@
     </script>
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
+    
+    <!-- Chatbot HTML -->
+    <div id="chatbot-container">
+      <div id="chatbot-header">
+        <h5><i class="bi bi-person-circle me-2"></i>Peter Nelmida</h5>
+        <button id="chatbot-minimize">
+          <i class="bi bi-dash"></i>
+        </button>
+      </div>
+      <div id="chatbot-messages"></div>
+      <div id="chatbot-input-container">
+        <input type="text" id="chatbot-input" placeholder="Ask me anything about this portfolio..." />
+        <button id="chatbot-send">
+          <i class="bi bi-send-fill"></i>
+        </button>
+      </div>
+    </div>
+    <button id="chatbot-toggle" class="chatbot-toggle-btn">
+      <i class="bi bi-chat-dots-fill"></i>
+    </button>
+    
+    <!-- Chatbot JavaScript -->
+    <script src="js/chatbot.js"></script>
     
   </body>
 </html>
