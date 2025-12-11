@@ -37,4 +37,4 @@ A modern, responsive portfolio website showcasing my work, skills, and services 
 
 ---
 
-© 2024 Peter Luigi M. Nelmida. All rights reserved.
+© 2025 Peter Luigi M. Nelmida. All rights reserved.
