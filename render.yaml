@@ -2,15 +2,14 @@
 # This file configures your portfolio for deployment on Render.com
 
 services:
-  - type: web
+  - type: static
     name: portfolio-website
-    env: static
-    # Build command - skip npm install for static sites
-    buildCommand: echo "Skipping npm install for static site..." && echo "Build complete!"
-    # Static site settings
+    # Static site configuration - NO BUILD COMMAND NEEDED
+    buildCommand: ""
+    # Publish directory
     staticPublishPath: .
-    # Skip npm install
-    skipBuild: true
+    # Branch to deploy
+    branch: main
     # Environment variables (if needed)
     envVars:
       - key: NODE_ENV
