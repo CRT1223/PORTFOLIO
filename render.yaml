@@ -5,10 +5,12 @@ services:
   - type: web
     name: portfolio-website
     env: static
-    # Build command - not needed for static sites, but included to prevent errors
-    buildCommand: echo "Building static site..." && echo "Build complete!"
+    # Build command - skip npm install for static sites
+    buildCommand: echo "Skipping npm install for static site..." && echo "Build complete!"
     # Static site settings
     staticPublishPath: .
+    # Skip npm install
+    skipBuild: true
     # Environment variables (if needed)
     envVars:
       - key: NODE_ENV

@@ -23,3 +23,8 @@ npm-debug.log*
 *.tmp
 *.temp
 
+# NPM files (not needed for static site)
+package-lock.json
+node_modules/
+.npm
+
