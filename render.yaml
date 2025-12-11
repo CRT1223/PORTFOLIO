@@ -1,0 +1,28 @@
+# Render.com Static Site Configuration
+# This file configures your portfolio for deployment on Render.com
+
+services:
+  - type: web
+    name: portfolio-website
+    env: static
+    # Build command - not needed for static sites, but included to prevent errors
+    buildCommand: echo "Building static site..." && echo "Build complete!"
+    # Static site settings
+    staticPublishPath: .
+    # Environment variables (if needed)
+    envVars:
+      - key: NODE_ENV
+        value: production
+    # Health check path
+    healthCheckPath: /
+    # Headers for better performance
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-XSS-Protection
+        value: 1; mode=block

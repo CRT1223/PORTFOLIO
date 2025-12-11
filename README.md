@@ -22,6 +22,9 @@ A modern, responsive portfolio website showcasing my work, skills, and services 
 - AOS (Animate On Scroll) Library
 - Bootstrap Icons
 
+## Live Demo
+
+Visit the live website: [Your GitHub Pages URL]
 
 ## Setup
 
@@ -37,4 +40,4 @@ A modern, responsive portfolio website showcasing my work, skills, and services 
 
 ---
 
-© 2025 Peter Luigi M. Nelmida. All rights reserved.
+© 2024 Peter Luigi M. Nelmida. All rights reserved.
