@@ -307,7 +307,7 @@ class Chatbot {
         }
         
         // Additional conversational responses
-        if (input.includes('how are you') || input.includes('how's it going')) {
+        if (input.includes('how are you') || input.includes("how's it going")) {
             return "I'm doing great, thanks for asking! 😊 Working on some cool projects and always learning new things. How about you?";
         }
         
