@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "start": "npx serve .",
-    "build": "echo \"Static site - no build step\""
+    "build": "echo 'No build step required for static site'",
+    "deploy": "echo 'Deploying to Render.com...' && git push"
   },
   "keywords": [
     "portfolio",
@@ -16,9 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CRT1223/PORTFOLIO.git"
+    "url": "https://github.com//portfolio.git"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=14.0.0"
   }
 }
+
